@@ -1,6 +1,6 @@
 // src/components/HomePage.jsx
 import React, { useEffect, useState } from "react";
-import "../styles/HomePage.css";
+import "../Styles/HomePage.css";
 import axios from "axios";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
