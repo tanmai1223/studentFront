@@ -23,7 +23,7 @@ const AuthProvider = ({ children }) => {
       }
 
       try {
-        const res = await axios.get("http://localhost:3000/me", {
+        const res = await axios.get("https://studentback-ocnq.onrender.com/me", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setRole(res.data.role);

@@ -49,7 +49,7 @@ function Edit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:3000/api/student/${data._id}`, info);
+      await axios.patch(`https://studentback-ocnq.onrender.com/api/student/${data._id}`, info);
        navigate('/edited')
     } catch (err) {
       console.error("Update failed:", err);

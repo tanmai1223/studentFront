@@ -16,7 +16,7 @@ function Charts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/api/student');
+        const res = await axios.get('https://studentback-ocnq.onrender.com/api/student');
         const students = res.data;
 
         const male = students.filter((s) => s.gender?.toLowerCase() === 'm');

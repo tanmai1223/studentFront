@@ -20,7 +20,7 @@ function Details() {
     if (id) {
       const fetchData = async () => {
         try {
-          const res = await axios.get(`http://localhost:3000/api/student/${id}`);
+          const res = await axios.get(`https://studentback-ocnq.onrender.com/api/student/${id}`);
           setData(res.data);
         } catch (err) {
           console.log(err);

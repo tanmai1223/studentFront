@@ -38,7 +38,7 @@ function Add() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:3000/api/student`, info);
+      await axios.post(`https://studentback-ocnq.onrender.com/api/student`, info);
       navigate('/edited');
     } catch (err) {
       const backendMessage = err.response?.data || err.message;

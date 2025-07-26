@@ -12,7 +12,7 @@ function Delete() {
   useEffect(() => {
     const deleteStudent = async () => {
       try {
-        await axios.delete(`http://localhost:3000/api/student/${id}`);
+        await axios.delete(`https://studentback-ocnq.onrender.com/api/student/${id}`);
       } catch (err) {
         console.error("Error deleting student:", err);
       }

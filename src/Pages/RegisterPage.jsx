@@ -14,7 +14,7 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/register", data);
+      await axios.post("https://studentback-ocnq.onrender.com/register", data);
       setData({ username: "", password: "", role: "" });
     } catch (err) {
       console.log(err);

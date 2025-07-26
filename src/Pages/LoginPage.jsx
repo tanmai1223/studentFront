@@ -19,7 +19,7 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/login', data);
+      const res = await axios.post('https://studentback-ocnq.onrender.com/login', data);
       const { token, role } = res.data;
 
       localStorage.setItem('token', token);
