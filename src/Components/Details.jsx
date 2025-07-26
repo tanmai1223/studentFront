@@ -3,7 +3,7 @@ import axios from "axios";
 import { useLocation, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import "../styles/HomePage.css";
+import "../Styles/HomePage.css";
 import { AuthContext } from '../Context/AuthContext';
 
 function Details() {
